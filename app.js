@@ -171,6 +171,11 @@ app.post("/plans/:day/:index/delete", (req, res) => {
 // Serve uploaded images
 app.use("/uploads", express.static("uploads"));
 
+// Fix the static middleware for default-img
+const defaultImgPath = path.join(__dirname, 'default-img');
+console.log('Image path:', defaultImgPath); // For debugging
+app.use('/default-img', express.static(defaultImgPath));
+
 // Admin routes
 app.get('/admin/login', (req, res) => {
     res.render('admin-login');

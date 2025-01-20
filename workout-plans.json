@@ -2,10 +2,58 @@
   "monday": {
     "plans": [
       {
-        "name": "an Nguyen",
-        "description": "adsda",
-        "duration": 5,
-        "image": "/default-workout.jpg"
+        "name": "Chest Press Machine",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/1_chest press machine.webp"
+      },
+      {
+        "name": "Incline Chest Press",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/2_incl chest press.jpg"
+      },
+      {
+        "name": "Machine Chest Press",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/3_mach chest press.jpg"
+      },
+      {
+        "name": "Incline Chest Press",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/4_incl mch press.jpg"
+      },
+      {
+        "name": "Incline Chest Fly Dumbell",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/5_incl chest fly.png"
+      },
+      {
+        "name":"Cable Chest Fly",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/6_cable chest fly.webp"
+      },
+      {
+        "name":"Shoulder fly",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/7_shoulder fly.webp"
+      },
+      {
+        "name":"Cable Shoulder fly",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/8_cable sh fly.jpg"
+      },
+      {
+        "name":"Shoulder machine fly",
+        "description": "4 Sets of 10 reps",
+        "duration": 3,
+        "image": "/default-img/T2_img/9_sh mach fly.png"
       }
     ]
   },
