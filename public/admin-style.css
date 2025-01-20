@@ -1,0 +1,93 @@
+/* Admin Theme - Simplified color palette */
+:root {
+  --a-primary: #00ff00;
+  --a-bg: #121212;
+  --a-card: #1e1e1e;
+  --a-text: #fff;
+}
+
+/* Core Layout */
+.admin-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: var(--a-card);
+  border-radius: 4px;
+}
+
+/* Navigation */
+.admin-nav {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.admin-nav-link {
+  color: var(--a-text);
+  text-decoration: none;
+  padding: 8px;
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+  background: var(--a-primary);
+  color: var(--a-bg);
+}
+
+/* Forms */
+.admin-form {
+  display: grid;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-input,
+.admin-textarea,
+.admin-select,
+.admin-button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--a-card);
+}
+
+/* Buttons */
+.admin-button-primary {
+  background: var(--a-primary);
+  color: var(--a-bg);
+  border: none;
+  cursor: pointer;
+}
+
+/* Table */
+.admin-table {
+  width: 100%;
+  background: var(--a-card);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--a-bg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-header,
+  .admin-nav {
+    flex-direction: column;
+  }
+  
+  .admin-table {
+    overflow-x: auto;
+  }
+} 

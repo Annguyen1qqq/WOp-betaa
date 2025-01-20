@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Plans</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS -->
+  <script defer src="/js/tabs.js"></script>
+  
+</head>
+<body>
+  <div class="logo-container">
+    <img src="/images/amimo.png" alt="Plan Tap Den Chet Logo" class="logo">
+  </div>
+  <h1>Plan Tap Den Chet</h1>
+  
+  <div class="days-tabs">
+    <button class="tab-button active" data-day="monday">Monday</button>
+    <button class="tab-button" data-day="tuesday">Tuesday</button>
+    <button class="tab-button" data-day="wednesday">Wednesday</button>
+    <button class="tab-button" data-day="thursday">Thursday</button>
+    <button class="tab-button" data-day="friday">Friday</button>
+    <button class="tab-button" data-day="saturday">Saturday</button>
+    <button class="tab-button" data-day="sunday">Sunday</button>
+  </div>
+
+  <% const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']; %>
+  
+  <% days.forEach(day => { %>
+    <div class="day-content" id="<%= day %>" style="display: <%= day === 'monday' ? 'block' : 'none' %>">
+      <h2><%= day.charAt(0).toUpperCase() + day.slice(1) %> Bai </h2>
+      <div class="plans-list">
+        <% workoutPlans[day].plans.forEach((plan, index) => { %>
+          <div class="plan-card">
+            <img src="<%= plan.image %>" alt="<%= plan.name %>">
+            <h3><%= plan.name %></h3>
+            <p><%= plan.description %></p>
+            <p>Thời gian nghỉ: <%= plan.duration %> minutes</p>
+            
+            
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  <% }) %>
+</body>
+</html>

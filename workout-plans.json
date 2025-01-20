@@ -1,0 +1,30 @@
+{
+  "monday": {
+    "plans": [
+      {
+        "name": "an Nguyen",
+        "description": "adsda",
+        "duration": 5,
+        "image": "/default-workout.jpg"
+      }
+    ]
+  },
+  "tuesday": {
+    "plans": []
+  },
+  "wednesday": {
+    "plans": []
+  },
+  "thursday": {
+    "plans": []
+  },
+  "friday": {
+    "plans": []
+  },
+  "saturday": {
+    "plans": []
+  },
+  "sunday": {
+    "plans": []
+  }
+}
